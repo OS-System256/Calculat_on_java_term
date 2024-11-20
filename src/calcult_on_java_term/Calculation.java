@@ -23,5 +23,6 @@ public class Calculation {
 			Interfaces_user.error = "данная операция не найдена";
 			Interfaces_user.answer_error();
 		}
+		Interfaces_user.number1 = Calculation.result;
 	}
 }

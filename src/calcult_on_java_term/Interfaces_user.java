@@ -16,24 +16,21 @@ public class Interfaces_user {
 	public static void interface_user() {
 		System.out.print("Ведите втророе числе в вычеслении: ");
 		Interfaces_user.number2 = scan.nextFloat();
-		System.out.print("1. Вычитание\n2. Деление\n3. Нахождение остатка при делении\n4. Сложение\n5. Умножение\n6. Возедение в корень\n:: Выбирете действие (1-6):\n::  ");
+		System.out.print("1. Вычитание\n2. Деление\n3. Нахождение остатка при делении\n4. Сложение\n5. Умножение\n6. Возедение в корень\n:: Выбирете действие (1-6):\n:: ");
 		Interfaces_user.int_user_answer = scan.nextInt();
 		Calculation.calcult();
-		System.out.print("Результат: " + Calculation.result + "\nНачать вычесление с результатом? [y/n] ");
-		String String_user_answer = scan.next();
-		System.out.print(String_user_answer);
-		if (String_user_answer == "y" | String_user_answer == "Y") {
-			System.out.print(1);
+		System.out.print("Результат: " + Calculation.result + "\nНачать вычесление над результатом? [y/n] ");
+		char String_user_answer = scan.next().charAt(0);
+		if (String_user_answer == 'y' | String_user_answer == 'Y') {
 			Interfaces_user.interface_user();
 		}
-		if (String_user_answer == "n" | String_user_answer == "N") {
-			System.out.print(2);
+		if (String_user_answer == 'n' | String_user_answer == 'N') {
 			return;
 		}
-		/*else {
-			Interfaces_user.error = "::Ответ не понятен (надо было написать y (что означает, что вы согласны) или n (вы не согласны))";
+		if (String_user_answer != 'y' | String_user_answer != 'Y' | String_user_answer != 'n' | String_user_answer != 'N') {
+			Interfaces_user.error = "Ответ не понятен (надо было написать y (что означает, что вы согласны) или n (вы не согласны))";
 			Interfaces_user.answer_error();
-		}*/
+		}
 	}
 	public static void answer_error() {
 		System.out.println("Ошибка: " + Interfaces_user.error + ". Перезагрузка программы...");
