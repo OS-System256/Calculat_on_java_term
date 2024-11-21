@@ -19,7 +19,7 @@ public class Calculation {
 		if (Interfaces_user.int_user_answer == 5) {
 			Calculation.result = Interfaces_user.number1 * Interfaces_user.number2;
 		}
-		if (Interfaces_user.int_user_answer < 1 & Interfaces_user.int_user_answer > 5) {
+		if (Interfaces_user.int_user_answer < 1 || Interfaces_user.int_user_answer > 5) {
 			Interfaces_user.error = "данная операция не найдена";
 			Interfaces_user.answer_error();
 		}

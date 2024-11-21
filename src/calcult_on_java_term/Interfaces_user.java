@@ -16,7 +16,7 @@ public class Interfaces_user {
 	public static void interface_user() {
 		System.out.print("Ведите втророе числе в вычеслении: ");
 		Interfaces_user.number2 = scan.nextFloat();
-		System.out.print("1. Вычитание\n2. Деление\n3. Нахождение остатка при делении\n4. Сложение\n5. Умножение\n6. Возедение в корень\n:: Выбирете действие (1-6):\n:: ");
+		System.out.print("1. Вычитание\n2. Деление\n3. Нахождение остатка при делении\n4. Сложение\n5. Умножение\n:: Выбирете действие (1-5):\n:: ");
 		Interfaces_user.int_user_answer = scan.nextInt();
 		Calculation.calcult();
 		System.out.print("Результат: " + Calculation.result + "\nНачать вычесление над результатом? [y/n] ");
