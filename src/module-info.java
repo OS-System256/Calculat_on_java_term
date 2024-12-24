@@ -4,5 +4,5 @@
 /**
  * 
  */
-module calcult_on_java_term {
+module console_calculation_on_java {
 }

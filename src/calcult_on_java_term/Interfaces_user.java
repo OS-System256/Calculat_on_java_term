@@ -27,7 +27,7 @@ public class Interfaces_user {
 		if (String_user_answer == 'n' | String_user_answer == 'N') {
 			return;
 		}
-		if (String_user_answer != 'y' | String_user_answer != 'Y' | String_user_answer != 'n' | String_user_answer != 'N') {
+		if (String_user_answer != 'y' & String_user_answer != 'Y' & String_user_answer != 'n' & String_user_answer != 'N') {
 			Interfaces_user.error = "Ответ не понятен (надо было написать y (что означает, что вы согласны) или n (вы не согласны))";
 			Interfaces_user.answer_error();
 		}
