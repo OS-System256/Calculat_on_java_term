@@ -1,4 +1,4 @@
-package calcult_on_java_term;
+package console_calculation_on_java;
 
 public class Calculation {
 	public static float result;
